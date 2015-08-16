@@ -1,5 +1,5 @@
 {
-    "name": "kop/yii2-scroll-pager",
+    "name": "weison-tech/yii2-scroll-pager",
     "description": "Infinite AJAX scrolling for Yii2 ListView widget",
     "homepage": "http://kop.github.io/yii2-scroll-pager/",
     "keywords": ["yii", "yii2", "scroll", "scrolling", "pager", "pagination"],
