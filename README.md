@@ -31,7 +31,7 @@ Either run
 
 or add
 
-``` "weison-tech/ii2-scroll-pager": "dev-master"```
+``` "weison-tech/yii2-scroll-pager": "dev-master"```
 
 to the `require` section of your `composer.json` file.
 
