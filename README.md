@@ -27,11 +27,11 @@ The preferred way to install this extension is through [Composer](http://getcomp
 
 Either run
 
-``` php composer.phar require kop/yii2-scroll-pager "dev-master" ```
+``` php composer.phar require weison-tech/yii2-scroll-pager "dev-master" ```
 
 or add
 
-``` "kop/yii2-scroll-pager": "dev-master"```
+``` "weison-tech/ii2-scroll-pager": "dev-master"```
 
 to the `require` section of your `composer.json` file.
 
