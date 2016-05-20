@@ -75,6 +75,18 @@ class ScrollPager extends Widget
     public $item = '.item';
 
     /**
+     * @var string $paginationSelector Enter the selector of the element containing the pagination.
+     */
+    public $paginationSelector = '.list-view .pagination';
+
+    /**
+     * @var string $next Enter the selector of the link element that links to the next page.
+     * The href attribute of this element will be used to get the items from the next page.
+     * Make sure there is only one(1) element that matches the selector.
+     */
+    public $next = '.next a';
+
+    /**
      * @var int $delay Minimal number of milliseconds to stay in a loading state.
      */
     public $delay = 600;
@@ -266,8 +278,8 @@ class ScrollPager extends Widget
         $pluginSettings = Json::encode([
             'container' => $this->container,
             'item' => $this->item,
-            'pagination' => "{$this->container} .pagination",
-            'next' => '.next a',
+            'pagination' => $this->paginationSelector,
+            'next' => $this->next,
             'delay' => $this->delay,
             'negativeMargin' => $this->negativeMargin
         ]);
@@ -413,9 +425,9 @@ class ScrollPager extends Widget
 
                 // Register event
                 $this->view->registerJs(
-                    "jQuery.ias().on('{$name}', {$this->$eventName});",
+                    "{$this->id}_ias.on('{$name}', {$this->$eventName});",
                     View::POS_READY,
-                    "{$this->id}_ias_{$name}"
+                    "{$this->id}_ias_event_{$eventName}"
                 );
             }
         }
