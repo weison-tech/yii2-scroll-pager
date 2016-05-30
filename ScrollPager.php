@@ -243,7 +243,7 @@ class ScrollPager extends Widget
         Yii::$app->i18n->translations = ArrayHelper::merge(Yii::$app->i18n->translations, [
             'kop\y2sp' => [
                 'class' => PhpMessageSource::className(),
-                'basePath' => '@vendor/kop/yii2-scroll-pager/messages',
+                'basePath' => '@vendor/weison-tech/yii2-scroll-pager/messages',
                 'fileMap' => [
                     'kop\y2sp' => 'general.php'
                 ]
